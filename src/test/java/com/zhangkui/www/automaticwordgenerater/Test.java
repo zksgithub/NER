@@ -1,5 +1,7 @@
 package com.zhangkui.www.automaticwordgenerater;
 
+import java.util.logging.Logger;
+
 import com.zhangkui.www.graphic.GraphicGenerator;
 import com.zhangkui.www.graphic.vexsedges.GetVexsAndEdges;
 
@@ -19,7 +21,7 @@ public class Test extends TestCase {
        
         pG = new GraphicGenerator(vexs, edges);
         
- 
+        
         pG.printToText("matrix10.txt");   // 打印图
         pG.storeGrapic("matrix10.data");
 	}

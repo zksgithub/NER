@@ -33,7 +33,7 @@ public class GetWordV2 extends TestCase {
 		 vexs =  graphic.getVexs();
 		
 		 for(int i=0;i<matrix.length;i++){
-				 if(getBeforeByOne(i).size()<getNextByOne(i).size()){
+				 if(getInList(i).size()<getOutList(i).size()){
 					 
 					 logger.info(vexs[i]);
 				 }
@@ -59,7 +59,7 @@ public class GetWordV2 extends TestCase {
 	 * @param j
 	 * @return
 	 */
-	public ArrayList<Integer> getNextByOne(int j){
+	public ArrayList<Integer> getOutList(int j){
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		
 		for(int k=0;k<matrix.length;k++){
@@ -75,7 +75,7 @@ public class GetWordV2 extends TestCase {
 	 * @param j
 	 * @return
 	 */
-	public ArrayList<Integer> getBeforeByOne(int j){
+	public ArrayList<Integer> getInList(int j){
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		
 		for(int k=0;k<matrix.length;k++){

@@ -9,7 +9,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 /**
- * @author kuizhang
+ * @author zhangkui
  * 定义矩阵的结构，并可以根据所在行和列查询词组
  */
 public class Graphic implements Serializable {
@@ -21,7 +21,7 @@ public class Graphic implements Serializable {
     
     
     /**
-     * 采用反序列化进行图的初始化
+     * 提供序列化后的文件，采用反序列化进行图的初始化
      * @param filename
      * @throws IOException
      * @throws ClassNotFoundException

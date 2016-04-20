@@ -12,7 +12,7 @@ public class Test extends TestCase {
 
 	//测试图的生成和存储
 	public void testGraphicGenerate() throws Exception{
-		String filename ="/Users/zhangkui/Documents/workspace4mars/scientistanlytic/nianbiao/沈克琦.txt";
+		String filename ="nianbiao/沈克琦.txt";
         char[] vexs = GetVexsAndEdges.getWordVexsArray(filename);
         
         char[][] edges = GetVexsAndEdges.getWordEdgesArray(filename);
@@ -22,7 +22,7 @@ public class Test extends TestCase {
         pG = new GraphicGenerator(vexs, edges);
         
         
-        pG.printToText("matrix10.txt");   // 打印图
-        pG.storeGrapic("matrix10.data");
+        pG.printToText("target/matrix10.txt");   // 打印图
+        pG.storeGrapic("target/matrix10.data");
 	}
 }

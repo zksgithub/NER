@@ -1,5 +1,5 @@
 /**
- * 
+ * 测试所建立的网是否具有自动给出词的能力
  */
 package com.zhangkui.www.automaticwordgenerater.testgetword;
 
@@ -16,7 +16,7 @@ import com.zhangkui.www.graphic.bean.VetexBean;
 import junit.framework.TestCase;
 
 /**
- * @author buaalib
+ * @author kuizhang
  *
  */
 public class GetWordV2 extends TestCase {

@@ -33,9 +33,10 @@ public class GetWordV2 extends TestCase {
 		 vexs =  graphic.getVexs();
 		
 		 for(int i=0;i<matrix.length;i++){
-				 if(getInList(i).size()<getOutList(i).size()){
+				 if(getInList(i).size()==getOutList(i).size()){
 					 
 					 logger.info(vexs[i]);
+					 
 				 }
 		 }
 		// logger.info(vexs[index]+" max="+max+" i="+index);

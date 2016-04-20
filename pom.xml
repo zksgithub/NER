@@ -40,5 +40,11 @@
 		<artifactId>log4j</artifactId>
 		<version>${log4j.version}</version>
 	</dependency>
+	
+	<dependency>
+		<groupId>c3p0</groupId>
+		<artifactId>c3p0</artifactId>
+		<version>0.9.1.2</version>
+	</dependency>
   </dependencies>
 </project>

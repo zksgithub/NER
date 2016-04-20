@@ -7,6 +7,12 @@ import java.util.Iterator;
 import com.zhangkui.www.util.io.FileReadWrite;
 
 public class GetVexsAndEdges {
+	/**
+	 * 获取hash表
+	 * @param filename
+	 * @return
+	 * @throws IOException
+	 */
 	public static HashMap<String, Integer> getHashMap(String filename) throws IOException {
 		String words = new FileReadWrite().readFile(filename);
 		// 去除空格
@@ -23,7 +29,12 @@ public class GetVexsAndEdges {
 		}
 		return hm;
 	}
-
+	/**
+	 * 从文件得到顶点信息
+	 * @param filename
+	 * @return
+	 * @throws IOException
+	 */
 	public static char[] getWordVexsArray(String filename) throws IOException {
 		HashMap<String, Integer> hm = getHashMap(filename);
 
@@ -38,7 +49,12 @@ public class GetVexsAndEdges {
 		return total.toCharArray();
 
 	}
-
+	/**
+	 * 从文件得到边的数据
+	 * @param filename
+	 * @return
+	 * @throws IOException
+	 */
 	public static char[][] getWordEdgesArray(String filename) throws IOException {
 		String words = new FileReadWrite().readFile(filename);
 		// 去除空格

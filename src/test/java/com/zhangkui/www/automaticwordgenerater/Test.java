@@ -1,7 +1,5 @@
 package com.zhangkui.www.automaticwordgenerater;
 
-import java.util.logging.Logger;
-
 import com.zhangkui.www.graphic.GraphicGenerator;
 import com.zhangkui.www.graphic.vexsedges.GetVexsAndEdges;
 
@@ -16,13 +14,15 @@ public class Test extends TestCase {
         char[] vexs = GetVexsAndEdges.getWordVexsArray(filename);
         
         char[][] edges = GetVexsAndEdges.getWordEdgesArray(filename);
+     
+        
+        for(int i =0;i<vexs.length;i++)
+        	System.out.print("\'"+vexs[i]+"\'"+",");
+        /**
         GraphicGenerator pG;
-        
-       
         pG = new GraphicGenerator(vexs, edges);
-        
-        
         pG.printToText("target/matrix10.txt");   // 打印图
         pG.storeGrapic("target/matrix10.data");
+        */
 	}
 }

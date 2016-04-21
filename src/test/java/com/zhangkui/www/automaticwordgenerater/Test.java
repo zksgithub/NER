@@ -1,16 +1,16 @@
 package com.zhangkui.www.automaticwordgenerater;
 
+
+import com.zhangkui.www.database.dao.Dao;
 import com.zhangkui.www.graphic.GraphicGenerator;
 import com.zhangkui.www.graphic.vexsedges.GetVexsAndEdges;
-
 import junit.framework.TestCase;
 
 public class Test extends TestCase {
 	
-
 	//测试图的生成和存储
 	public void testGraphicGenerate() throws Exception{
-		String filename ="nianbiao/沈克琦.txt";
+		String filename ="nianbiao/train_沈克琦.txt";
         char[] vexs = GetVexsAndEdges.getWordVexsArray(filename);
         
         char[][] edges = GetVexsAndEdges.getWordEdgesArray(filename);
